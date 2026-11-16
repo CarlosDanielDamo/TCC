@@ -6,3 +6,24 @@
 img {
     width: 20vw;
 }
+
+
+#Menu{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Menu-Botoes{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.Menu-Botoes, li{
+    text-align: center;
+    margin-left: 10px;
+}
