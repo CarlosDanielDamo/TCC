@@ -7,6 +7,61 @@ img {
     width: 20vw;
 }
 
+/* Fixa o botão no canto da tela */
+.acessibilidade-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+#btn-acessibilidade {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #064E3B; /* Combina com sua paleta verde */
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#menu-acessibilidade {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+
+#menu-acessibilidade.oculto {
+  display: none;
+}
+
+#menu-acessibilidade button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Estilos aplicados quando o Alto Contraste é ativado */
+body.alto-contraste {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.alto-contraste a,
+body.alto-contraste h1,
+body.alto-contraste h2 {
+  color: #ffff00 !important; /* Amarelo de alto contraste */
+}
 
 #Menu{
     width: 100vw;
