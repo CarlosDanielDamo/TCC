@@ -2,92 +2,273 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desirée Cardoso</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav id="menu">
+        <!--Espaço reservado para o icone-->
+        <a href="#inicio"><img src="" alt=""></a>
         <ul>
-            <li><a href="./index.html">DESIRÉE</a></li>
-            <li><a href="./index.html">Cardoso</a></li>
-        </ul>
-        <ul>
-            <li>SOBRE MIM</li>
-            <li>GALERIA</li>
-            <li>ARTESANATO</li>
-            <li>ENCOMENDA</li>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Galeria">Portifólio</a></li>
+            <li><a href="#A-Venda">À Venda</a></li>
+            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#Encomenda">Pedir Orçamento</a></li>
         </ul>
     </nav>
     </header>
     <main>
-        <section class="SobreMim">
-            <img src="./img/Desiree.jpeg" alt="Desirée Cardoso">
-            <small>Artista visual · ceramista · sonhadora</small>
-            <h1>Eu pinto o que as palavras não dizem.</h1>
-            <p>Sou Lia, artista brasileira apaixonada por transformar sentimentos em cor, forma e textura. Meu trabalho nasce de memórias, encontros e tudo aquilo que insiste em florescer.</p>
+        <section id="Inicio">
+            <small>ARTE FEITA PARA SENTIR</small>
+            <h1>Oii, oii! Eu sou a <strong>Desiree</strong>.</h1>
+            <p>Seja muito bem-vindo(a) ao meu ateliê digital!</p>
+            <p>Um espaço para conhecer meu universo criativo, descobrir obras e dar vida a ideias únicas através da arte.</p>
             <a href="#Galeria">Conheça meu trabalho </a>
+            <img src="./img/desiree2.jpeg" alt="Desirée Cardoso">
         </section>
-        <section class="Galeria"> 
+        <section id="Sobre">
+            <img src="./img/Desiree.jpeg" alt="Desirée Cardoso">
+            <small>POR TRÁS DAS CORES</small>
+            <h1>Conheça a <strong>artista</strong></h1>
+            <p>Espaço reservado para a biografia da Desiree. Aqui será apresentado um resumo de sua história com a arte, sua trajetória e os caminhos que a trouxeram até este ateliê.</p>
+            <p>Este espaço também poderá contar sobre suas inspirações, técnicas favoritas e o olhar particular que torna cada criação única.</p>
+            <p><strong>Desiree Cardoso</strong></p>
+        </section>
+        <section id="Galeria"> 
             <article>
-                <small>01 — Desenhos & pinturas</small>
-                <h1>Histórias em camadas</h1>
-                <p>Acrílica, pastel, nanquim e tudo o que couber entre a ideia e o papel. Cada obra é uma conversa que continua.</p>
+                <small>Seleção de trabalhos</small>
+                <h2>Meu universo em <strong>cores</strong></h2>
+                <p>Explore as diferentes formas, materiais e ideias que fazem parte do meu processo criativo.</p>
+                
             </article>
-            <article>
-                <div class="pinturas">
-                    <img src="./img/FotoEspelho.jpeg" alt="">
-                    <img src="./img/Mascara.jpeg" alt="">
-                    <img src="./img/RMisto.jpeg" alt="">
-                    <img src="./img/RBrancoMisto.jpeg" alt="">
-                    <img src="./img/RAbraço.jpeg" alt="">
-                    <img src="./img/CasaFogo.jpeg" alt="">
-                    <img src="./img/Iemanja.jpeg" alt="">
-                    <img src="./img/PorquinhoMulheres.jpeg" alt="">
+            <article id="Galeria-Menu">
+                <ul>
+                    <li>Todas</li>
+                    <li>Pinturas</li>
+                    <li>Desenhos</li>
+                    <li>Artesanato e Criações Manuais</li>
+                    <li>Ilustrações Digitais</li>
+                    <li>Estampas e Design</li>
+                </ul>
+                <div id="Pinturas">
+                    <div>
+                        <img src="./img/FotoEspelho.jpeg" alt="Reflexo">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/Mascara.jpeg" alt="Mascarada">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/RMisto.jpeg" alt="Rato Preto e Branco">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/RBrancoMisto.jpeg" alt="Dois Ratos">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/RAbraço.jpeg" alt="Ratos Abraçados">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/CasaFogo.jpeg" alt="Casa em Fogo">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/Iemanja.jpeg" alt="Iemanja">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
+                    <div>
+                        <img src="./img/PorquinhoMulheres.jpeg" alt="Mulheres e Porquinho">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Pintura</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div id="Artes-Digitais">
+                    <div>
+                        <img src="./img/Colar.jpeg" alt="Mulher com Colar">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Arte digital</p>
+                    </div>
+                    <div>
+                        <img src="./img/Mascarado.jpeg" alt="Mascarado">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Arte digital</p>
+                    </div>
+                    <div>
+                        <img src="./img/OculosAmarelo.jpeg" alt="Mulher com Oculos Amarelo">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Arte digital</p>
+                    </div>
+                    <div>
+                        <img src="./img/Ruiva.jpeg" alt="Mulher Ruiva">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Arte digital</p>
+                    </div>
+                    <div>
+                        <img src="./img/Piscadinha.jpeg" alt="Mulher Piscando">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Arte digital</p>
+                    </div>
+                    <div>
+                        <img src="./img/Smile.jpeg" alt="Mulher com Smiles no rosto">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Arte digital</p>
+                    </div>   
+                </div>
+                <div id="Feitos-mão">
+                    <div>
+                        <img src="./img/blasphemous.jpeg" alt="Mascara feita a mão">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Feito a mão</p>
+                    </div>
+                    <div>
+                        <img src="./img/CanequinhasFrente.jpeg" alt="Canecas Artesanal">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Feito a mão</p>
+                    </div>
+                    <div>
+                        <img src="./img/RomaoFrente.jpeg" alt="Estatua Feita a Mão">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Feito a mão</p>
+                    </div>
+                    <div>
+                        <img src="./img/Sapão.jpeg" alt="Sapo no Acrilico">
+                        <figcaption>Título da obra</figcaption>
+                        <p>Feito a mão</p>
+                    </div>     
                 </div>
             </article>
         </section>
-        <section class="Artesanato">
-            <article>
-                <small>02 — Esculturas & artesanato</small>
-                <h1>Feito à mão, com afeto</h1>
-                <p>Peças únicas modeladas devagar. Pequenos objetos para guardar histórias, ocupar espaços e acompanhar a vida.</p>
+        <section id="A-Venda">
+            <article id="A-Venda-Textos">
+                <small>Peças disponíveis</small>
+                <h2>Arte para levar <strong>com você</strong></h2>
+                <p>Obras e criações disponíveis para encontrar um novo lar. Consulte os detalhes e fale diretamente comigo para demonstrar interesse.</p>
+                <small>Venda direta, sem carrinho ou pagamento pelo site</small>
             </article>
-            <article>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+            <article id="A-Venda-Produtos">
+                <div class="A-Venda-Item">
+                    <img src="./img/CaveiraLinguda.jpeg" alt="">
+                    <small>Disponibilidade a confirmar</small>
+                    <h3>Nome da obra</h3>
+                    <p>Descrição da obra, técnica, dimensões e demais detalhes.</p>
+                    <p>Preço sob consulta</p>
+                    <a href="Contato">Tenho Interesse</a>
+                </div>
+                <div class="A-Venda-Item">
+                    <img src="./img/CaveiraLinguda.jpeg" alt="">
+                    <small>Disponibilidade a confirmar</small>
+                    <h3>Nome da obra</h3>
+                    <p>Descrição da obra, técnica, dimensões e demais detalhes.</p>
+                    <p>Preço sob consulta</p>
+                    <a href="Contato">Tenho Interesse</a>
                 </div>
             </article>
         </section>
-        <section>
-            <small>Tem uma ideia especial?</small>
-            <p>Vamos criar algo só seu.</p>
-            <a href="./html/encomenda.html">Faça sua encomenda!</a>
+        <section id="Encomenda">
+            <div id="Encomenda-Textos">
+                <small>Feito especialmente para você</small>
+                <h2>Vamos criar algo <strong>único?</strong></h2>
+                <p>Conte sua ideia, ocasião ou inspiração. Este é o primeiro passo para transformarmos sua história em uma criação personalizada.</p>
+                <article>
+                <p>01</p>
+                <p>Você compartilha sua ideia</p>
+                <p>02</p>
+                <p>Conversamos sobre detalhes e prazo</p>
+                <p>03</p>
+                <p>Eu crio sua peça com todo cuidado</p>
+            </div>
+            <div id="Encomenda-Formulario">
+                <h2>Peça seu orçamento</h2>
+                <p>Preencha os campos abaixo. Retornarei assim que possível.</p>
+                <form action="">
+                    <label for="">Seu Nome</label>
+                    <input type="text" name="" id="">
+
+                    <label for="">Seu e-Mail</label>
+                    <input type="email" name="" id="">
+
+                    <label for="">Telefone</label>
+                    <input type="tel" name="" id="">
+
+                    <label for="">O que você deseja?</label>
+                    <select name="" id="">
+                        <option value="">Selecione uma opsão</option>
+                        <option value="">Pintura ou desenho</option>
+                        <option value="">Escultura em ceramica</option>
+                        <option value="">Peça artesanal</option>
+                        <option value="">Ainda não tenho certeza</option>
+                    </select>
+
+                    <label for="">conte a sua ideia</label>
+                    <input type="text" name="" id="">
+
+                    <button type="button">Enviar Solicitação</button>
+            </form>
+            </div>
+        </article>
+        </section>
+        <section id="Contato">
+            <div id="Contato-Textos">
+                <small>Vamos conversar?</small>
+                <h2>Encontre meu <strong>ateliê</strong></h2>
+                <p>Para encomendas, dúvidas ou apenas para acompanhar novas criações.</p>
+            </div>
+            <div class="Contatos-Card">
+                <img src="" alt="">
+                <small>WhatsApp</small>
+                <a href="">Inserir Contato</a>
+            </div>
+            <div class="Contatos-Card">
+                <img src="" alt="">
+                <small>Instagram</small>
+                <a href="">@Inserir_Usuario</a>
+            </div>
+            <div class="Contatos-Card">
+                <img src="" alt="">
+                <small>E-mail</small>
+                <a href="">E-mail@a-inserir.com</a>
+            </div>
+            
+
         </section>
         <footer>
-         <article>
-            <ul>
-                <li><a href="./index.html">DESIRÉE</a></li>
-                <li><a href="./index.html">Cardoso</a></li>
-            </ul>
-            <h3>Arte para sentir, tocar e levar com você.</h3>
-         </article>
-         <article>
-            <p>Vamos Conversar</p>
-            <a href="">contato@DesiréeCardoso.com</a>
-            <a href="">@desiréeCard</a>
-            <p>&copy; Desirée Cardoso. Feito com cor.</p>
+         <article id="Rodape">
+            <div id="Rodape-Superior">
+                <div id="Rodape-Texto">
+                    <!--Espaço reservado para o icone-->
+                    <img src="" alt="">
+                    <h3>Desiree Cardoso</h3>
+                    <p>Arte que transforma sentimento em cor.</p>
+                </div>
+                <div id="Rodape-menu">
+                    <ul>
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#Sobre">Sobre</a></li>
+                        <li><a href="#Galeria">Portifólio</a></li>
+                        <li><a href="#A-Venda">À Venda</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                        <li><a href="#Encomenda">Pedir Orçamento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="Rodape-Inferior">
+                <p>&copy; Desiree Cardoso</p>
+                <p>Desenvolvido com cuidado por Bloom Byte</p>
+            </div>
          </article>   
         </footer>
     </main>
