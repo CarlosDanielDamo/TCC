@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playpen+Sans:wght@100..800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Playpen Sans", cursive;
     font-family: sans-serif;
 }
 
@@ -20,26 +23,31 @@ img {
   position: sticky;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 10px #000000;
   background-color: #ffffff;
   display: flex;
+  border-bottom: 1px dotted #008000;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
-#Icone-Cabecalho {
+#Cabecalho-Conteudo {
   display: flex;
-  justify-items: left;
-  font-size: 14px;
+}
+
+#Cabecalho-Texto {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  font-size: 14px;
 }
 
 #Menu {
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: auto;
 }
 
 .icon img {
@@ -89,13 +97,24 @@ img {
   transform: scaleX(1);
 }
 
+#Menu-Botoes-Encomenda a {
+  padding: 15px;
+  border-radius: 20px;
+  color: #f9f9f9;
+  background-color: #176B47;
+}
+
 #Btn-Hamburguer {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 28px;
-  height: 21px;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  padding: 15px 10px;
   background: transparent;
+  background-color: #E5F2E9;
+  border-radius: 100px;
   border: none;
   cursor: pointer;
 }
@@ -104,14 +123,14 @@ img {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #064E3B;
-  border-radius: 3px;
+  background-color: #176B47;
+  border-radius: 4px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Corrigido para #Btn-Hamburguer.ativo */
 #Btn-Hamburguer.ativo span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(3px) rotate(45deg);
 }
 
 #Btn-Hamburguer.ativo span:nth-child(2) {
@@ -123,12 +142,12 @@ img {
 }
 
 @media (max-width: 760px) {
-  /* Corrigido para #Btn-Hamburguer */
+  
   #Btn-Hamburguer {
     display: flex;
   }
 
-  /* Corrigido para #Menu */
+  
   #Menu {
     position: fixed;
     top: 64px;
@@ -137,7 +156,6 @@ img {
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;

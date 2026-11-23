@@ -2,6 +2,7 @@ const btnHamburguer = document.querySelector("#Btn-Hamburguer");
 const menuNav = document.querySelector("#Menu");
 const linksMenu = document.querySelectorAll(".Menu-Botoes a");
 
+/*
 // Selecionando o formulário
 const formulario = document.getElementById("form-encomenda");
 
@@ -98,6 +99,7 @@ Gostaria de conversar sobre os detalhes da minha encomenda!
     }
 
 });
+*/
 
 
 
