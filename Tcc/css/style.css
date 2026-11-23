@@ -1,10 +1,158 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img {
     width: 20vw;
+}
+
+#Cabecalho {
+  width: 100%;
+  min-height: 64px;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 10px #000000;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+#Icone-Cabecalho {
+  display: flex;
+  justify-items: left;
+  font-size: 14px;
+  flex-direction: column;
+}
+
+#Menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon img {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.Menu-Botoes {
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.Menu-Botoes li {
+  display: flex;
+  align-items: center;
+}
+
+.Menu-Botoes a {
+  position: relative;
+  padding: 5px;
+  color: #064E3B;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Menu-Botoes a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #9c157b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.Menu-Botoes a:hover::after {
+  transform: scaleX(1);
+}
+
+#Btn-Hamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#Btn-Hamburguer span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #064E3B;
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Corrigido para #Btn-Hamburguer.ativo */
+#Btn-Hamburguer.ativo span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#Btn-Hamburguer.ativo span:nth-child(2) {
+  opacity: 0;
+}
+
+#Btn-Hamburguer.ativo span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 760px) {
+  /* Corrigido para #Btn-Hamburguer */
+  #Btn-Hamburguer {
+    display: flex;
+  }
+
+  /* Corrigido para #Menu */
+  #Menu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  #Menu.ativo {
+    max-height: 420px;
+    padding: 16px 0;
+  }
+
+  .Menu-Botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
 }
 
 /* Fixa o botão no canto da tela */
@@ -61,24 +209,4 @@ body.alto-contraste a,
 body.alto-contraste h1,
 body.alto-contraste h2 {
   color: #ffff00 !important; /* Amarelo de alto contraste */
-}
-
-#Menu{
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-
-}
-.Menu-Botoes{
-    display: flex;
-    list-style: none;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.Menu-Botoes, li{
-    text-align: center;
-    margin-left: 10px;
 }
